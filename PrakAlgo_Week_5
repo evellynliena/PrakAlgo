@@ -1,0 +1,252 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNbbIVAQMkUIxcx7da9GLt0",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/evellynliena/PrakAlgo/blob/main/PrakAlgo_Week_5\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# **WEEKLY EXERCISE**"
+      ],
+      "metadata": {
+        "id": "o34KZVw_j7NY"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Weekly Exercise 1"
+      ],
+      "metadata": {
+        "id": "2nts_eGMkANh"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ml9vyQ7WjZOy",
+        "outputId": "829dbaaa-0f93-457c-f0f9-ce40667dca0f"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Masukkan tahun : 2024\n",
+            "2024 adalah tahun kabisat\n"
+          ]
+        }
+      ],
+      "source": [
+        "tahun = (int(input(\"Masukkan tahun : \")))\n",
+        "if tahun % 4 == 0:\n",
+        "    print(f\"{tahun} adalah tahun kabisat\")\n",
+        "else:\n",
+        "    print(f\"{tahun}  bukan tahun kabisat\")"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Weekly Exercise 2"
+      ],
+      "metadata": {
+        "id": "2K6n7ra2l5_q"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "angka1 = (float(input(\"Masukkan angka pertama : \")))\n",
+        "angka2 = (float(input(\"Masukkan angka kedua : \")))\n",
+        "angka3 = (float(input(\"Masukkan angka ketiga : \")))\n",
+        "if angka1 > angka2 and angka1 > angka3:\n",
+        "  terbesar = angka1\n",
+        "elif angka2 > angka1 and angka2 > angka3:\n",
+        "  terbesar = angka2\n",
+        "else:\n",
+        "  terbesar = angka3\n",
+        "print(f\"Angka pertama adalah {angka1}\")\n",
+        "print(f\"Angka kedua adalah {angka2}\")\n",
+        "print(f\"Angka ketiga adalah {angka3}\")\n",
+        "print(f\"Angka terbesar adalah {terbesar}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "kuSIH0TjmVKL",
+        "outputId": "4d161e84-edc8-4acb-dec8-afb72b4d65ae"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Masukkan angka pertama : 37\n",
+            "Masukkan angka kedua : 73.5\n",
+            "Masukkan angka ketiga : 42\n",
+            "Angka pertama adalah 37.0\n",
+            "Angka kedua adalah 73.5\n",
+            "Angka ketiga adalah 42.0\n",
+            "Angka terbesar adalah 73.5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Weekly Exercise 3"
+      ],
+      "metadata": {
+        "id": "B_he8tQMnqrh"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "konsumer = input(\"Apakah anda sebuah member (masukkan 'iya' atau 'tidak')\").lower()\n",
+        "totalbelanja = (float(input(\"Masukkan total belanja : \")))\n",
+        "diskon = 0\n",
+        "if totalbelanja > 200000:\n",
+        "  diskon += 4 / 100\n",
+        "elif totalbelanja > 100000:\n",
+        "  diskon += 3 / 100\n",
+        "if konsumer == \"iya\":\n",
+        "  diskon += 2 / 100\n",
+        "totaldiskon = totalbelanja * diskon\n",
+        "totalbayar = totalbelanja - totaldiskon\n",
+        "print(f\"Total yang harus dibayar adalah Rp{totalbayar}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Z4rhY4UNntOV",
+        "outputId": "b1ead5ac-3d84-48e4-e973-ca0b0540bd0d"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Apakah anda sebuah member (masukkan 'iya' atau 'tidak')iya\n",
+            "Masukkan total belanja : 250000\n",
+            "Total yang harus dibayar adalah Rp235000.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Weekly Exercise 4"
+      ],
+      "metadata": {
+        "id": "0f820g3orfhA"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "username = input(\"Masukkan username : \")\n",
+        "email = input(\"Masukkan email : \")\n",
+        "password = input(\"Masukkan password : \")\n",
+        "if username == \"\":\n",
+        "  print(\"Username tidak boleh kosong\")\n",
+        "elif \"@\" not in email:\n",
+        "  print(\"Email harus terdapat @\")\n",
+        "elif len(password) <= 8:\n",
+        "  print(\"Password harus lebih dari 8 karakter\")\n",
+        "else:\n",
+        "  print(\"Akun user sudah berhasil dibuat!\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "xibqe_5UrjCd",
+        "outputId": "ccecde3c-b80f-415d-a364-f211cd9f8ad6"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Masukkan username : hello\n",
+            "Masukkan email : hello23@gmail.com\n",
+            "Masukkan password : 987654321\n",
+            "Akun user sudah berhasil dibuat!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "username = input(\"Masukkan username : \")\n",
+        "email = input(\"Masukkan email : \")\n",
+        "password = input(\"Masukkan password : \")\n",
+        "if username == \"\":\n",
+        "  print(\"Username tidak boleh kosong\")\n",
+        "elif \"@\" not in email:\n",
+        "  print(\"Email harus terdapat @\")\n",
+        "elif len(password) <= 8:\n",
+        "  print(\"Password harus lebih dari 8 karakter\")\n",
+        "else:\n",
+        "  print(\"Akun user sudah berhasil dibuat!\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "6JLcOAk3t2OT",
+        "outputId": "a5867cd8-2007-4ae2-fbbf-5f5702c1d816"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Masukkan username : hellooo\n",
+            "Masukkan email : helooo@gmail.com\n",
+            "Masukkan password : 76543218\n",
+            "Password harus lebih dari 8 karakter\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
