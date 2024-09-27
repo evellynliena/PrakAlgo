@@ -1,0 +1,162 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPrzEN/1vJd4fmEdLKvS5Hr",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/evellynliena/PrakAlgo/blob/main/PrakAlgo_Week_6\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# **WEEKLY EXERCISE**"
+      ],
+      "metadata": {
+        "id": "HZWlb8_SmOua"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Weekly Exercise 1"
+      ],
+      "metadata": {
+        "id": "mEJlinn3mUUa"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 8,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "jyfxAPxzmGrC",
+        "outputId": "46c27100-b25c-4452-97bf-336c203caf08"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Masukkan angka: 5\n",
+            "    * \n",
+            "   * * \n",
+            "  * * * \n",
+            " * * * * \n",
+            "* * * * * \n"
+          ]
+        }
+      ],
+      "source": [
+        "bintang = int(input(\"Masukkan jumlah baris: \"))\n",
+        "for i in range(bintang):\n",
+        "    print(\" \" * (bintang - i - 1), end=\"\")\n",
+        "    print(\"* \" * (i + 1))"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Weekly Exercise 2"
+      ],
+      "metadata": {
+        "id": "BBq3OJmcr6mh"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "baris = int(input(\"Masukkan jumlah baris: \"))\n",
+        "\n",
+        "for i in range(1, baris + 1):\n",
+        "    for j in range(0, baris-i + 1):\n",
+        "        print(\" \", end=\"\")\n",
+        "        c=1\n",
+        "    for j in range(1, i+1):\n",
+        "        print(\" \",c, sep=\"\", end=\"\")\n",
+        "        c=c*(i-j)//(j)\n",
+        "    print()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "MA5jVC9Br9ab",
+        "outputId": "75becafe-67f6-4668-ef5b-a1b43e0c0fa7"
+      },
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Masukkan jumlah baris: 4\n",
+            "     1\n",
+            "    1 1\n",
+            "   1 2 1\n",
+            "  1 3 3 1\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Weekly Exercise 3"
+      ],
+      "metadata": {
+        "id": "6eERE4pOtmod"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "baris_segitiga = int(input(\"Masukkan jumlah baris: \"))\n",
+        "if baris < 0 :\n",
+        "    print(\"Masukkan angka yang benar\")\n",
+        "else:\n",
+        "    jumlah_baris = 2 ** (baris_segitiga - 1)\n",
+        "    print(f\"Jumlah {baris_segitiga} yang akan ditampilkan adalah: {jumlah_baris}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "rcwPee0ctsAI",
+        "outputId": "68bd189a-287b-472d-c66c-8554805d38fe"
+      },
+      "execution_count": 19,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Masukkan jumlah baris: 5\n",
+            "Jumlah 5 yang akan ditampilkan adalah: 16\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
